@@ -1,6 +1,6 @@
 # generator-hero [![Build Status](https://secure.travis-ci.org/rdooh/generator-hero.png?branch=master)](https://travis-ci.org/rdooh/generator-hero)
 
-> [Yeoman](http://yeoman.io) generator
+> [Yeoman](http://yeoman.io) generator.
 
 
 ## Getting Started
