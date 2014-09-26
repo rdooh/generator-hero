@@ -33,10 +33,12 @@ var HeroGenerator = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       this.dest.mkdir('app');
-      this.dest.mkdir('app/templates');
+      this.dest.mkdir('src');
+      this.dest.mkdir('src/app');
 
       this.src.copy('_package.json', 'package.json');
       this.src.copy('_Gruntfile.js', 'Gruntfile.js');
+      this.src.copy('src/app/_app.coffee', 'src/app/app.coffee');
     },
 
     projectfiles: function () {
