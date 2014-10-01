@@ -80,6 +80,7 @@ app.get( '*', (req, res, next) ->
     req.Hero.response.metaData.success = false
     req.Hero.response.metaData.message = "resource requested is unavailable or doesn't exist"
     jsonResponse.send req, res, next
+    
   return
 )
 #======================================
