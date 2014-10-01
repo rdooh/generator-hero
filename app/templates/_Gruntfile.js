@@ -110,7 +110,7 @@ module.exports = function (grunt) {
   ]);
 
   // Restart
-  grunt.registerTask('recompile', 'recompile coffeescript', [
+  grunt.registerTask('init', 'first, compile coffeescript', [
     'coffee:glob_to_multiple',
     'watch'
   ]);
