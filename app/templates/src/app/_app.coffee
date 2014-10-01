@@ -4,6 +4,7 @@
 app = require("express")()
 app.use require("express-error-handler")()
 app.use require("body-parser")()
+jsonResponse = require("./heros/jsonResponseHero.js")()
 
 #======================================
 # End all basic requirements
@@ -46,6 +47,19 @@ app.get "/favicon.ico", (req, res) ->
 
 
 #======================================
+# Router: middleware to use for all requests
+#======================================
+# Deal with headers
+app.use require("./heros/headerHero.js")
+#======================================
+# End Router: middleware
+#======================================
+
+
+
+
+
+#======================================
 # Load the external Routers
 #======================================
 
@@ -54,7 +68,7 @@ app.get "/favicon.ico", (req, res) ->
 #======================================
 # !Status
 #======================================
-#app.use "/status", require "./controllers/status.js"
+app.use "/status", require "./controllers/status.js"
 #======================================
 
 

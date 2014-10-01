@@ -35,10 +35,16 @@ var HeroGenerator = yeoman.generators.Base.extend({
       this.dest.mkdir('app');
       this.dest.mkdir('src');
       this.dest.mkdir('src/app');
+      this.dest.mkdir('src/app/controllers');
+      this.dest.mkdir('src/app/heros');
 
       this.src.copy('_package.json', 'package.json');
       this.src.copy('_Gruntfile.js', 'Gruntfile.js');
+      
       this.src.copy('src/app/_app.coffee', 'src/app/app.coffee');
+      this.src.copy('src/app/heros/_headerHero.coffee', 'src/app/heros/headerHero.coffee');
+      this.src.copy('src/app/heros/_jsonResponseHero.coffee', 'src/app/heros/jsonResponseHero.coffee');
+      this.src.copy('src/app/controllers/_status.coffee', 'src/app/controllers/status.coffee');
     },
 
     projectfiles: function () {

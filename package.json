@@ -1,6 +1,6 @@
 {
   "name": "generator-hero",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yeoman generator, currently just a test for future project scaffolding.  Generated using generator-generator.",
   "license": "MIT",
   "main": "app/index.js",
@@ -11,7 +11,7 @@
     "url": "https://github.com/rdooh"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.30"
   },
   "scripts": {
     "test": "mocha"
